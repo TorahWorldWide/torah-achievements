@@ -1,0 +1,582 @@
+{
+  "root": {
+    "id": "root",
+    "name": "בראשית",
+    "date": "2026-04-16",
+    "tier": "platinum",
+    "art": "root",
+    "tex": "home",
+    "desc": "היום הראשון. הקורא נולד — הטקסט על המסך, מצב הצגת כל הפרק וזוהר הפסוק."
+  },
+  "branches": [
+    {
+      "label": "הטקסט",
+      "row": -4,
+      "from": "root",
+      "tex": "klaf",
+      "nodes": [
+        {
+          "id": "t1",
+          "name": "חמש רמות תרגום",
+          "date": "2026-05-28",
+          "tier": "gold",
+          "art": "t1",
+          "glyph": "ה",
+          "desc": "מערכת תרגום בחמש רמות, פשט תחילה — עם כללי בינוני־נסמך, ניבים ומלכודות תיאולוגיות."
+        },
+        {
+          "id": "t2",
+          "name": "בלי ניקוד",
+          "date": "2026-05-30",
+          "tier": "bronze",
+          "art": "t2",
+          "glyph": "ב",
+          "desc": "רמת קריאה ללא ניקוד לבראשית ב׳–ט׳."
+        },
+        {
+          "id": "t3",
+          "name": "במדבר ד׳–י״ב",
+          "date": "2026-05-30",
+          "tier": "silver",
+          "art": "t3",
+          "glyph": "מ",
+          "desc": "פרשות נשא ובהעלותך תורגמו בארבע רמות כל אחת."
+        },
+        {
+          "id": "t4",
+          "name": "ספרות עבריות",
+          "date": "2026-07-23",
+          "tier": "bronze",
+          "art": "t4",
+          "glyph": "א",
+          "desc": "ספרות עבריות כברירת מחדל, ותיקון אובדן סנכרון בלחיצה על מילה."
+        },
+        {
+          "id": "L13",
+          "lock": 13,
+          "name": "חיפוש משפט שלם",
+          "tier": "gold",
+          "art": "l13",
+          "desc": "„עין תחת עין“ יימצא כרצף מלא, לא רק המילה הבודדת. לבדוק אם ה־API תומך בביטוי; אם לא — לבנות מעליו."
+        },
+        {
+          "id": "L11",
+          "lock": 11,
+          "name": "פירושים לצד המקרא",
+          "tier": "platinum",
+          "art": "l11",
+          "glyph": "פ",
+          "desc": "מסך מפוצל עם חלונות מתכווננים, תרגום AI לעברית, והמחשה של מתי נכתב כל פירוש ועל ידי מי."
+        },
+        {
+          "id": "L15",
+          "lock": 15,
+          "name": "תרגום לאנגלית",
+          "tier": "gold",
+          "art": "l15",
+          "glyph": "E",
+          "desc": "מסומן מפורשות כמשימה רחוקה."
+        }
+      ]
+    },
+    {
+      "label": "הפרשה",
+      "row": -3,
+      "from": "root",
+      "tex": "parch",
+      "nodes": [
+        {
+          "id": "p1",
+          "name": "פרשת השבוע",
+          "date": "2026-05-30",
+          "tier": "platinum",
+          "art": "p1",
+          "glyph": "פ",
+          "desc": "זיהוי אוטומטי של הפרשה דרך ספריא, כפתור בבית, קפיצה להתחלה וסימוני גבול על הטקסט."
+        },
+        {
+          "id": "L1",
+          "lock": 1,
+          "name": "המחט על הפרשה",
+          "tier": "gold",
+          "art": "l1",
+          "desc": "לחיצה על פרשת השבוע תעמיד את ההקלטה על המילה הראשונה של הפרשה — Play מתחיל שם מיד."
+        },
+        {
+          "id": "L2",
+          "lock": 2,
+          "name": "חצים בין פרשות",
+          "tier": "silver",
+          "art": "l2",
+          "desc": "שני חצי זהב קטנים משני צידי כפתור פרשת השבוע — לפרשה הבאה ולקודמת."
+        },
+        {
+          "id": "L9",
+          "lock": 9,
+          "name": "הבאנר שיודע להיעלם",
+          "tier": "silver",
+          "art": "l9",
+          "glyph": "ב",
+          "desc": "באנר הפרשה ייסגר מעצמו ביציאה מטווח הפרשה, במקום להישאר עד לחיצה על ה־×."
+        }
+      ]
+    },
+    {
+      "label": "הסצנות",
+      "row": -2,
+      "from": "root",
+      "tex": "night",
+      "nodes": [
+        {
+          "id": "s1",
+          "name": "פאנל ההגדרות",
+          "date": "2026-04-24",
+          "tier": "bronze",
+          "art": "s1",
+          "desc": "פאנל הגדרות מחודש: סרגל נקי, עמודת אייקונים מיושרת ורשת קיצורים."
+        },
+        {
+          "id": "s2",
+          "name": "הכול נזכר",
+          "date": "2026-06-09",
+          "tier": "bronze",
+          "art": "s2",
+          "glyph": "ז",
+          "desc": "כל ההעדפות נשמרות בין ביקורים, עם כפתור איפוס בהגדרות."
+        },
+        {
+          "id": "s3",
+          "name": "גופן לכל תבנית",
+          "date": "2026-06-09",
+          "tier": "silver",
+          "art": "s3",
+          "glyph": "א",
+          "desc": "כתר ארם צובא, שמוליק ופרנק רוהל — גופן נעול לכל סצנה, בלי בורר גופנים."
+        },
+        {
+          "id": "s4",
+          "name": "לוח האבן",
+          "date": "2026-06-09",
+          "tier": "gold",
+          "art": "s4",
+          "glyph": "ל",
+          "desc": "סצנת אבן שלישית — טיח סיד בהיר, נאמן להר עיבל, אחרי שש גרסאות מרקם."
+        },
+        {
+          "id": "s5",
+          "name": "שמי הלילה",
+          "date": "2026-06-09",
+          "tier": "platinum",
+          "art": "s5",
+          "glyph": "ש",
+          "desc": "שדה כוכבים חי שהפך לסצנה רביעית, עם התפרצות בלחיצה ועננים דקים."
+        },
+        {
+          "id": "s6",
+          "name": "הירח האמיתי",
+          "date": "2026-06-09",
+          "tier": "silver",
+          "art": "s6",
+          "glyph": "י",
+          "desc": "ירח דו־קשתי במופע הירח האמיתי, מכוון נכון לישראל."
+        },
+        {
+          "id": "s7",
+          "name": "שמי לילה לפי פרק",
+          "date": "2026-06-10",
+          "tier": "gold",
+          "art": "s7",
+          "glyph": "ש",
+          "desc": "שמיים ייחודיים לכל פרק, פרלקסה בגלילה ושכבת עומק."
+        },
+        {
+          "id": "s8",
+          "name": "בוחר הסצנות",
+          "date": "2026-07-03",
+          "tier": "gold",
+          "art": "s8",
+          "glyph": "ב",
+          "desc": "חלון בחירת סצנה בביקור הראשון, עם תצוגות מקדימות אמיתיות מתוך הקורא."
+        },
+        {
+          "id": "L10",
+          "lock": 10,
+          "name": "תצוגת הבוקר",
+          "tier": "gold",
+          "art": "l10",
+          "glyph": "ב",
+          "desc": "תצוגה שלישית לצד הקלף והלילה. הפרטים עוד לא הוגדרו."
+        }
+      ]
+    },
+    {
+      "label": "הקלף",
+      "row": -1,
+      "from": "s3",
+      "tex": "klaf",
+      "nodes": [
+        {
+          "id": "k1",
+          "name": "סימון לפי סצנה",
+          "date": "2026-06-11",
+          "tier": "bronze",
+          "art": "k1",
+          "desc": "קו סימון מותאם לכל סצנה במקום תיבת רקע, וכפתור העתקת פרק בסרגל."
+        },
+        {
+          "id": "L6",
+          "lock": 6,
+          "name": "מילה קריאה על הקלף",
+          "tier": "silver",
+          "art": "l6",
+          "glyph": "מ",
+          "desc": "המילה הנקראת בתצוגת הקלף — צהוב עם מתאר שחור במקום זהב שנבלע ברקע."
+        },
+        {
+          "id": "L7",
+          "lock": 7,
+          "name": "סימון שאפשר לקרוא",
+          "tier": "bronze",
+          "art": "l7",
+          "glyph": "ס",
+          "desc": "גרירת העכבר על הטקסט בקלף לא תהפוך את הנבחר לבלתי קריא."
+        }
+      ]
+    },
+    {
+      "label": "היסודות",
+      "row": 0,
+      "from": "root",
+      "tex": "home",
+      "nodes": [
+        {
+          "id": "f1",
+          "name": "רקע קליל",
+          "date": "2026-04-23",
+          "tier": "bronze",
+          "art": "f1",
+          "glyph": "ר",
+          "desc": "רקע מסך הבית הומר ל־WebP."
+        },
+        {
+          "id": "f2",
+          "name": "שער המנהל",
+          "date": "2026-04-24",
+          "tier": "bronze",
+          "art": "f2",
+          "glyph": "ש",
+          "desc": "פעולות יקרות והרסניות ננעלו מאחורי שער מנהל."
+        }
+      ]
+    },
+    {
+      "label": "האודיו",
+      "row": 1,
+      "from": "root",
+      "tex": "stone",
+      "nodes": [
+        {
+          "id": "a1",
+          "name": "יישור מאולץ, שמות א׳–י׳",
+          "date": "2026-06-10",
+          "tier": "silver",
+          "art": "a1",
+          "desc": "סנכרון אודיו v2 — יישור מאולץ מדויק לטוקנים שעל המסך, חיפוש בינארי, דילוג סימנים והקדמה של 150 מילישניות."
+        },
+        {
+          "id": "a2",
+          "name": "929 מתוך 929",
+          "date": "2026-06-13",
+          "tier": "platinum",
+          "art": "a2",
+          "desc": "נתוני יישור מאולץ לכל התנ״ך — כל פרק, כל מילה."
+        },
+        {
+          "id": "a3",
+          "name": "לולאה שלא נקטעת",
+          "date": "2026-06-17",
+          "tier": "bronze",
+          "art": "a3",
+          "glyph": "ל",
+          "desc": "לולאת הסנכרון קוראת ישירות את מצב הנגן במקום להיחסם מאחורי דגל."
+        },
+        {
+          "id": "a4",
+          "name": "תשעה־עשר גבולות",
+          "date": "2026-07-29",
+          "tier": "bronze",
+          "art": "a4",
+          "glyph": "ט",
+          "desc": "תיקון תזמוני מילים בגבול הפרשה ב־19 פרקים."
+        },
+        {
+          "id": "a5",
+          "name": "הקלטות נקיות מהענן",
+          "date": "2026-08-05",
+          "tier": "gold",
+          "art": "a5",
+          "glyph": "ה",
+          "desc": "ההקלטות המנוקות עברו ל־Cloudflare R2, עם ניסיון חוזר שמרפא את עצמו."
+        },
+        {
+          "id": "L4",
+          "lock": 4,
+          "name": "הצלילים הבלועים",
+          "tier": "platinum",
+          "art": "l4",
+          "glyph": "צ",
+          "desc": "לאתר אוטומטית את ~10% ההקלטות שבהן מילים נבלעות והקריין נשמע מתחת למים, ולהחליש את ביטול הרעש רק בשניות האלה — בלי לאבד את הניקוי בשאר ההקלטה. המקורות הגולמיים שמורים ב־archive.org להשוואה."
+        }
+      ]
+    },
+    {
+      "label": "האופליין",
+      "row": 2,
+      "from": "a5",
+      "tex": "stone",
+      "nodes": [
+        {
+          "id": "o1",
+          "name": "הספרייה שיורדת אליך",
+          "date": "2026-08-05",
+          "tier": "platinum",
+          "art": "o1",
+          "glyph": "ס",
+          "desc": "מצב לא־מקוון להורדה: חלון מדפים, קטלוג אוטומטי ו־service worker. חי באתר — בהגדרות, תחת „הורדה למצב לא מקוון“."
+        }
+      ]
+    },
+    {
+      "label": "המוזיקה",
+      "row": 3,
+      "from": "root",
+      "tex": "night",
+      "nodes": [
+        {
+          "id": "m1",
+          "name": "נגן הרקע הצף",
+          "date": "2026-07-14",
+          "tier": "gold",
+          "art": "m1",
+          "glyph": "נ",
+          "desc": "נגן מוזיקת רקע צף בבית ובקורא, עם קבוצות ז׳אנר צבעוניות ומספור גלובלי."
+        },
+        {
+          "id": "m2",
+          "name": "עשרים רצועות",
+          "date": "2026-07-22",
+          "tier": "silver",
+          "art": "m2",
+          "glyph": "כ",
+          "desc": "16 רצועות רקע חדשות, מצב לולאה וקבוצות מתקפלות."
+        },
+        {
+          "id": "m3",
+          "name": "המוזיקה מפנה דרך",
+          "date": "2026-08-04",
+          "tier": "gold",
+          "art": "m3",
+          "glyph": "ד",
+          "desc": "מוזיקת הרקע נסוגה לצדדים ברגע שהקריין מתחיל לקרוא."
+        },
+        {
+          "id": "m4",
+          "name": "מיקס בגובה האוזן",
+          "date": "2026-08-06",
+          "tier": "silver",
+          "art": "m4",
+          "glyph": "מ",
+          "desc": "פרופיל עמעום לכל רצועה, ווליום קריין בנייד, וכל רצועה מאוזנת באוזן."
+        },
+        {
+          "id": "L8",
+          "lock": 8,
+          "name": "עצירה אחת לשניהם",
+          "tier": "gold",
+          "art": "l8",
+          "glyph": "ע",
+          "desc": "עצירה מהאוזניות תעצור קריין ומוזיקה יחד — והמשך יחזיר את שניהם בדיוק לנקודה שבה נעצרו.",
+          "status": [
+            "24.08.2026 — נבנה, נבדק, ו**עלה לאתר החי**. האריח נשאר נעול כי דבר אחד לא נסגר.",
+            "עובד: עצירה מהאוזניות עוצרת קריין ומוזיקה יחד וחוזרת לאותה נקודה · לחיצה כפולה מעבירה פרק וחוצה בין ספרים · הקריין מתחיל מיד מהכרזת שם הפרק · אנימציית כרטיס הפרק · הניגון האוטומטי שורד את המעבר והמכסה יורדת בכל קפיצה.",
+            "לא נסגר: מהעצירה השנייה והלאה צריך שתי לחיצות כדי לעצור. ההמשך תמיד עובד בלחיצה אחת.",
+            "למה זה לא באשמת האתר: לוג של שבע לחיצות מהטלפון של תומר מראה שכל פעולה שהגיעה טופלה נכון — הנגן נעצר, הנעילה שוחררה, המוזיקה נעצרה. ללחיצה החסרה אין שום זכר; היא לא הגיעה לדפדפן. גם ביטול פקודת ה-stop וגם כיבוי מוזיקת הרקע לא שינו כלום.",
+            "החלטת תומר: כנראה האוזניות או אנדרואיד. נשאר פתוח לעתיד, אבל כל השאר נדחף לייצור באותו ערב (קומיט fe62789) — כי באתר החי הכפתור היה שבור בהרבה: הוא לא רק לא עצר את המוזיקה, הוא גם לא החזיר את הקריין בכלל. הפירוט המלא ביומן — JOURNAL.md."
+          ]
+        }
+      ]
+    },
+    {
+      "label": "השירים",
+      "row": 4,
+      "from": "root",
+      "tex": "parch",
+      "nodes": [
+        {
+          "id": "g1",
+          "name": "עמוד השירים",
+          "date": "2026-07-02",
+          "tier": "gold",
+          "art": "g1",
+          "glyph": "ש",
+          "desc": "עמוד שירים עם הדגשת מילה מסונכרנת."
+        },
+        {
+          "id": "g2",
+          "name": "שישה שירים מסונכרנים",
+          "date": "2026-07-03",
+          "tier": "silver",
+          "art": "g2",
+          "glyph": "ו",
+          "desc": "חמישה שירים נוספים וסנכרון ידני מכוון של בראשית א׳."
+        },
+        {
+          "id": "L14",
+          "lock": 14,
+          "name": "מדף השירים",
+          "tier": "silver",
+          "art": "l14",
+          "glyph": "מ",
+          "desc": "תצוגה טובה יותר ללשונית השירים במקום ריבועים ענקיים."
+        }
+      ]
+    },
+    {
+      "label": "החוויה",
+      "row": 5,
+      "from": "root",
+      "tex": "home",
+      "nodes": [
+        {
+          "id": "x1",
+          "name": "בית מותאם לנייד",
+          "date": "2026-04-24",
+          "tier": "silver",
+          "art": "x1",
+          "glyph": "נ",
+          "desc": "מסך בית שנכנס למסך אחד בנייד, עם כפתור מצפן ושכבת חיפוש."
+        },
+        {
+          "id": "x2",
+          "name": "סרגל שיודע להצטמצם",
+          "date": "2026-06-11",
+          "tier": "bronze",
+          "art": "x2",
+          "glyph": "ס",
+          "desc": "הסרגל העליון עובר לפריסה קומפקטית מתחת ל־1150 פיקסלים."
+        },
+        {
+          "id": "x3",
+          "name": "חלון המקורות",
+          "date": "2026-06-11",
+          "tier": "gold",
+          "art": "x3",
+          "desc": "חיפוש מבוסס דיקטא: תנ״ך ותלמוד, חלון נגרר ומשתנה־גודל, מסנני ספרים, משמעויות והטיות."
+        },
+        {
+          "id": "x4",
+          "name": "מדווח התקלות",
+          "date": "2026-07-23",
+          "tier": "silver",
+          "art": "x4",
+          "glyph": "ת",
+          "desc": "כפתור דיווח צף חסין קריסות, עם יומן פעולות והעלאה לענן."
+        },
+        {
+          "id": "x5",
+          "name": "בועות ההמשך",
+          "date": "2026-07-29",
+          "tier": "gold",
+          "art": "x5",
+          "glyph": "ב",
+          "desc": "אפקט אור להכרזה ובועות המשך אוטומטי בלחיצה ארוכה."
+        },
+        {
+          "id": "x6",
+          "name": "שורד את אנדרואיד",
+          "date": "2026-07-29",
+          "tier": "bronze",
+          "art": "x6",
+          "glyph": "א",
+          "desc": "המעבר להמשך אוטומטי שורד את הקפאת הרקע של אנדרואיד."
+        },
+        {
+          "id": "x7",
+          "name": "טבעת המכסה",
+          "date": "2026-07-30",
+          "tier": "gold",
+          "art": "x7",
+          "glyph": "ט",
+          "desc": "טבעת מכסה להמשך אוטומטי, ביטול דילוג ידני, והזנת דקות או פרקים."
+        },
+        {
+          "id": "x8",
+          "name": "בית שנפתח בהדרגה",
+          "date": "2026-07-31",
+          "tier": "bronze",
+          "art": "x8",
+          "desc": "רשת הפרקים וכפתור ההתחלה מופיעים רק אחרי בחירת ספר ופרק."
+        },
+        {
+          "id": "x9",
+          "name": "מצב עקיבה",
+          "date": "2026-07-31",
+          "tier": "silver",
+          "art": "x9",
+          "desc": "כפתור מצב עקיבה בסרגל התחתון, עם כפתור נגינה במרכז."
+        },
+        {
+          "id": "x10",
+          "name": "קלף בין פרקים",
+          "date": "2026-08-06",
+          "tier": "silver",
+          "art": "x10",
+          "glyph": "ק",
+          "desc": "כרטיס פרק קולנועי במעבר האוטומטי — במחשב ובנייד, בלי רעידות צד."
+        },
+        {
+          "id": "L12",
+          "lock": 12,
+          "name": "זכוכית בגבולות המסך",
+          "tier": "silver",
+          "art": "l12",
+          "desc": "הגדלת הטקסט תכבד את גבולות המסך ולא תחתוך אותו."
+        },
+        {
+          "id": "L5",
+          "lock": 5,
+          "name": "קליל על המעבד",
+          "tier": "silver",
+          "art": "l5",
+          "glyph": "ק",
+          "desc": "לייעל את האתר אם הוא כבד מדי על המעבד או הכרטיס הגרפי."
+        },
+        {
+          "id": "L3",
+          "lock": 3,
+          "name": "כפתורי המעבר",
+          "tier": "bronze",
+          "art": "l3",
+          "desc": "אולי להחזיר את כפתורי מעבר העמודים לעיצוב הקודם. עוד לא הוחלט."
+        }
+      ]
+    }
+  ],
+  "verbatim": {
+    "1": "to make it so when we press the parashat shavua button the audio recording of the man is already at the first word of the parashat shavua or at the parashat shavua announcment first word already so when we press play it already plays at the parashat shavua instantly instead of needing to press the first word of the parashat shavua yourself.",
+    "2": "making it so we have 2 little golden arrows next to the parashat shavua button so we can move to the next prarshat shavua and the parashat shavua before",
+    "3": "maybe changing back the buttons of the page switch idk yet",
+    "4": "we cleaned the white noise off of the audio recording but there is 90 precent perfect recordings (i did not check all of the recordings this is just an estimate) and 10 precent of audio recording that some words get swallowed and it sounds like the reader is underwater or somthing. the problem is that the audio gets swallowed somtimes in the middle of the chapter for only a couple of words or anything else, its random. so we need to find a way to maybe find these 10 precent of audio recording and exactly where they get swallowed and find a way to change the white noise cancellation in thoes exact moments in the recrdings and then moving the white cancelleatiion back in a dynamic way so that we dont lose the white noise cancelation for the rest of the audio recording. i cannot listen 1 by 1 to all the recordings myself and find them and then move the nob of the white noise cancelation in the exact times the audio gets swallowed, instead we need to figure out a way to do it. the AI and the programs we tried seem to not be able to notice and find these moments so this is a matter of concern...",
+    "5": "maybe find a way to optimize the website because it may be too heavy on cpu gpu or whatever. but if not possible then its ok.",
+    "6": "in the klaf view (not the night view) when a word is highlighted (because the person is reading it in the audio recording) i dont like that it changes color to yellow because its difficult to read the word. instead we need to try somthing els, my option is yellow with black outlines. [screenshot: highlighted klaf.png]",
+    "7": "also in klaf view when you highlight (by dragging the mouse over text) the text is also unreadable. solve this . [screenshot: zxczxc.png]",
+    "8": "we need to actually have it so when i press stop in my headphones it stops the music and the narrator (the AI said he did this already but it does not work like this at the moment) at the moment it stops only narrator. so stop them together and when continuing it needs to continue exactly where the song and narrator stopped.",
+    "9": "when we press parashat shavua button it has a banner on top saying parashat shavua, and when we move to the next chapter the banner is still there. i think the banner never goes away until we press the x on that banner. this should not work this way, either find an elegant way of solving this or just remove this feature completly. [screenshot: parahsat shavua banner .png]",
+    "10": "the morning view",
+    "11": "having a way to read perushim of jewish thinkers, maybe adding an ai translation to modern hebrew or biblical hebrew from diffrent langauges. maybe having half screen of tanakh half screen of perushim with adjustable windows. maybe having a visualization of when the perush was written and by who. this website is all about experience so the way it looks, feels, and acts matters a lot.",
+    "12": "fixing the magnifying glass button that makes text bigger - right now it can make text go outsides the bounds of the screen and so it cuts it off and it looks bad. we need it to respect the bounds of the screen , we might need to remove this completly if we cannot solve this.",
+    "13": "the search a word in the word search can only search a word and not search a sentence. eye for an eye it only finds eye and not the full sequance. we need to see if the api has this option because i remember the site we took this from has this option, if not we might need to build this ourselves ontop of the api. (there is a window of hatayot. meaning diffrent ways to say that word. we need sentences to appear there maybe)",
+    "14": "the songs tab instead of having huge squars we need a better way of doing things there.",
+    "15": "english translation — marked by Tomer as WAY DOWN THE LINE."
+  }
+}
