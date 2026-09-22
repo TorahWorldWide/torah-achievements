@@ -743,10 +743,8 @@
     document.getElementById("card-meta").innerHTML = meta;
     var d = document.getElementById("card-desc");
     d.textContent = node.desc;
-    var oldp = card.querySelector(".partial");
-    if (oldp) oldp.parentNode.removeChild(oldp);
-    var old = card.querySelector(".verbatim");
-    if (old) old.parentNode.removeChild(old);
+    var olds = card.querySelectorAll(".partial, .verbatim");
+    for (var oi = 0; oi < olds.length; oi++) olds[oi].parentNode.removeChild(olds[oi]);
     if (node.status) {
       var s = document.createElement("div");
       s.className = "partial";
@@ -755,6 +753,15 @@
         s.appendChild(el2("p", null, node.status[si]));
       }
       card.appendChild(s);
+    }
+    if (node.updates) {
+      var u = document.createElement("div");
+      u.className = "partial updates";
+      u.appendChild(el2("span", "plabel", "המשך הדרך"));
+      for (var ui = 0; ui < node.updates.length; ui++) {
+        u.appendChild(el2("p", null, node.updates[ui]));
+      }
+      card.appendChild(u);
     }
     if (node.full) {
       var v = document.createElement("div");
@@ -1005,6 +1012,10 @@
         L.push("  PARTIAL — worked on, not finished. Read before touching this item:");
         for (var si = 0; si < n.status.length; si++) L.push("    - " + n.status[si]);
       }
+      if (n.updates) {
+        L.push("  LATER FIXES on this tile:");
+        for (var ui = 0; ui < n.updates.length; ui++) L.push("    + " + n.updates[ui]);
+      }
       if (n.full) L.push("  TOMER'S ORIGINAL WORDS: " + n.full);
     }
     L.push("");
@@ -1015,6 +1026,7 @@
     for (i = 0; i < dn.length; i++) {
       n = dn[i];
       L.push(n.date + "  " + n.name + "  [" + n.tier + " | " + (n.branch || "root") + "] — " + n.desc);
+      if (n.updates) for (var ui2 = 0; ui2 < n.updates.length; ui2++) L.push("    + later: " + n.updates[ui2]);
     }
     return L.join("\n");
   }

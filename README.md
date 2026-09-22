@@ -41,6 +41,7 @@ a branch is the real chronological order and decides the tile's position in the 
 | `glyph` | no | one Hebrew letter, shown when there is no sprite for `art`. A new item with no artwork needs only `glyph`. |
 | `tex` | no | tile texture; defaults to the branch's `tex`. |
 | `status` | no | array of Hebrew strings for an open item that was worked on and **not** finished. Shown on the card under „מה נעשה ומה נשאר", adds the „חלקי" tag, and goes into the AI brief as PARTIAL. |
+| `updates` | no | array of Hebrew strings, each starting with its date — later fixes or follow-ups on a tile that already shipped (Tomer's rule, 22.9: a fix to an existing thing is a line on its tile, not a new item). Shown on the card under „המשך הדרך", no tag; listed in the AI brief as LATER FIXES. |
 
 `verbatim` is keyed by item number as a string (`"6"`). The card shows it under „במילים שלך" for
 every node whose `lock` or `was` matches. **Never paraphrase, tidy or shorten these — they are
@@ -62,6 +63,9 @@ desc, position — untouched. Rewrite `desc` only if what shipped genuinely diff
 ```json
 { "id": "L16", "lock": 16, "name": "…", "tier": "silver", "glyph": "…", "desc": "…" }
 ```
+
+**Record a later fix on a shipped tile:** append a dated Hebrew line to the node's `updates` array
+(create it if missing). Do not change `date` or `desc`, do not add a new item.
 
 **Mark an open item as partially done:** keep `lock`, add a `status` array (see the field table;
 item 8 in the data is the worked example).
